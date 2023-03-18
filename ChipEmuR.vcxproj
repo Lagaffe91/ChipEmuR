@@ -164,6 +164,7 @@
     <ClInclude Include="include\raylib\raymath.h" />
     <ClInclude Include="include\raylib\rlgl.h" />
     <ClInclude Include="src\Core\Interpreter.hpp" />
+    <ClInclude Include="src\Core\Utils.hpp" />
     <ClInclude Include="src\Renderer\IRenderer.hpp" />
     <ClInclude Include="src\Renderer\RaylibRenderer.hpp" />
   </ItemGroup>

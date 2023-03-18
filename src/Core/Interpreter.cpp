@@ -15,6 +15,11 @@ namespace Core
 
 	}
 
+	InterpreterState Interpreter::GetCurrentState()
+	{
+		return mState;
+	}
+
 	bool Interpreter::ShouldStop()
 	{
 		return false;

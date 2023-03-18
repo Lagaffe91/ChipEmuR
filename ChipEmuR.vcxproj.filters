@@ -53,5 +53,8 @@
     <ClInclude Include="src\Core\Interpreter.hpp">
       <Filter>Fichiers sources\core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Core\Utils.hpp">
+      <Filter>Fichiers sources\core</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

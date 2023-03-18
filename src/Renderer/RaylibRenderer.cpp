@@ -1,5 +1,7 @@
 #include <raylib/raylib.h>
 
+#include "../Core/Interpreter.hpp"
+
 #include "RaylibRenderer.hpp"
 
 namespace Renderer
@@ -33,7 +35,7 @@ namespace Renderer
 		CloseWindow();
 	}
 
-	void RaylibRenderer::RenderInterpreterState()
+	void RaylibRenderer::RenderInterpreterState(const InterpreterState& pInterpreterState)
 	{
 		BeginDrawing();
 

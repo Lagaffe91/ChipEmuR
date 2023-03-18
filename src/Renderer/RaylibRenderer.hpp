@@ -20,7 +20,7 @@ namespace Renderer
 		void Init() override;
 		void Release() override;
 
-		void RenderInterpreterState() override;
+		void RenderInterpreterState(const InterpreterState& pInterpreterState) override;
 
 		bool RenderShouldStop() override;
 	};

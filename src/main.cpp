@@ -14,7 +14,8 @@ int main(const int argc, const char* argv[])
 
 	while (!renderer->RenderShouldStop() || interpreter.ShouldStop())
 	{
-		renderer->RenderInterpreterState();
+		interpreter.SimulateCycle();
+		renderer->RenderInterpreterState(interpreter.GetCurrentState());
 	}
 
 	renderer->Release();

@@ -1,5 +1,7 @@
 #pragma once
 
+#include "Utils.hpp"
+
 namespace Core
 {
 	class Interpreter
@@ -10,6 +12,11 @@ namespace Core
 
 		void SimulateCycle();
 
+		InterpreterState GetCurrentState();
+
 		bool ShouldStop();
+
+	private:
+		InterpreterState mState;
 	};
 }
