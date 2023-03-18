@@ -155,12 +155,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Core\Interpreter.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Renderer\RaylibRenderer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\raylib\raylib.h" />
     <ClInclude Include="include\raylib\raymath.h" />
     <ClInclude Include="include\raylib\rlgl.h" />
+    <ClInclude Include="src\Core\Interpreter.hpp" />
+    <ClInclude Include="src\Renderer\IRenderer.hpp" />
+    <ClInclude Include="src\Renderer\RaylibRenderer.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

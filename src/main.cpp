@@ -1,21 +1,21 @@
 #include <iostream>
 
-#include <raylib/raylib.h>
+#include "Renderer/RaylibRenderer.hpp"
 
 int main(const int argc, const char* argv[])
 {
-	constexpr int windowWidth = 720;
-	constexpr int windowHeight = 480;
+	Renderer::IRenderer* renderer = new Renderer::RaylibRenderer();
 
-	const char* windowTitle = "ChipEmuR";
+	renderer->Init(); 
 
-	InitWindow(windowWidth, windowHeight, windowTitle);
+	while (!renderer->RenderShouldStop()) // || interpreter.ShouldStop())
+	{
+		renderer->RenderInterpreterState();
+	}
 
-	int _;
+	renderer->Release();
 
-	std::cin >> _;
-
-	CloseWindow();
+	delete renderer;
 
 	return 0;
 }

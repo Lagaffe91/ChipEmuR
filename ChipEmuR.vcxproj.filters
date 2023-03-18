@@ -16,10 +16,22 @@
     <Filter Include="Fichiers d%27en-tête\raylib">
       <UniqueIdentifier>{68b747c3-d67c-4835-8f03-cbc3a03f6e8c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Fichiers sources\renderer">
+      <UniqueIdentifier>{e83d490c-e471-4480-96e5-8bf640bd12b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fichiers sources\core">
+      <UniqueIdentifier>{e7b86ef4-ce7a-49fd-a652-76ec993cfd20}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\main.cpp">
       <Filter>Fichiers sources</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Renderer\RaylibRenderer.cpp">
+      <Filter>Fichiers sources\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Interpreter.cpp">
+      <Filter>Fichiers sources\core</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +43,15 @@
     </ClInclude>
     <ClInclude Include="include\raylib\rlgl.h">
       <Filter>Fichiers d%27en-tête\raylib</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\IRenderer.hpp">
+      <Filter>Fichiers sources\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Renderer\RaylibRenderer.hpp">
+      <Filter>Fichiers sources\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Interpreter.hpp">
+      <Filter>Fichiers sources\core</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
