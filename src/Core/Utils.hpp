@@ -4,6 +4,8 @@
 
 namespace Utils
 {
+	typedef void (*Instruction)(const int&); //Instruction function signature : C++ bullshit
+
 	constexpr char programOffset = 0x200;
 
 	struct InterpreterState
@@ -23,7 +25,7 @@ namespace Utils
 
 		unsigned int indexRegister;
 
-		unsigned int programCounter;
+		unsigned int programCounter = programOffset;
 	};
 
 	struct ProgramDesc
