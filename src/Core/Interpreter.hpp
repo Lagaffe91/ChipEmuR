@@ -12,11 +12,13 @@ namespace Core
 
 		void SimulateCycle();
 
-		InterpreterState GetCurrentState();
+		Utils::InterpreterState GetCurrentState() const;
 
-		bool ShouldStop();
+		bool ShouldStop() const;
+
+		void LoadProgram(const Utils::ProgramDesc& pProgram);
 
 	private:
-		InterpreterState mState;
+		Utils::InterpreterState mState;
 	};
 }
