@@ -24,24 +24,24 @@ namespace Core
 
 		Utils::InterpreterState mState;
 
-		std::unordered_map<int, Utils::Instruction> instructionsFunctions =
+		std::unordered_map<char, Utils::Instruction> instructionsFunctions =
 		{
-			{0x0000, &Interpreter::Instructions0x0xxx},
-			{0x1000, &Interpreter::Instruction0x1nnn},
-			{0x2000, &Interpreter::Instruction0x2nnn},
-			{0x3000, &Interpreter::Instruction0x3xkk},
-			{0x4000, &Interpreter::Instruction0x4xkk},
-			{0x5000, &Interpreter::Instruction0x5xy0},
-			{0x6000, &Interpreter::Instructions0x6xkk},
-			{0x7000, &Interpreter::Instructions0x7xkk},
-			{0x8000, &Interpreter::Instructions0x8xxx},
-			{0x9000, &Interpreter::Instruction0x9xy0},
-			{0xA000, &Interpreter::Instruction0xAnnn},
-			{0xB000, &Interpreter::Instruction0xBnnn},
-			{0xC000, &Interpreter::Instruction0xCxkk},
-			{0xD000, &Interpreter::Instruction0xDxyn},
-			{0xE000, &Interpreter::Instructions0xExxx},
-			{0xF000, &Interpreter::Instructions0xFxxx}
+			{0x0, &Interpreter::Instructions0x0xxx},
+			{0x1, &Interpreter::Instruction0x1nnn},
+			{0x2, &Interpreter::Instruction0x2nnn},
+			{0x3, &Interpreter::Instruction0x3xkk},
+			{0x4, &Interpreter::Instruction0x4xkk},
+			{0x5, &Interpreter::Instruction0x5xy0},
+			{0x6, &Interpreter::Instructions0x6xkk},
+			{0x7, &Interpreter::Instructions0x7xkk},
+			{0x8, &Interpreter::Instructions0x8xxx},
+			{0x9, &Interpreter::Instruction0x9xy0},
+			{0xA, &Interpreter::Instruction0xAnnn},
+			{0xB, &Interpreter::Instruction0xBnnn},
+			{0xC, &Interpreter::Instruction0xCxkk},
+			{0xD, &Interpreter::Instruction0xDxyn},
+			{0xE, &Interpreter::Instructions0xExxx},
+			{0xF, &Interpreter::Instructions0xFxxx}
 		};
 
 #pragma region

@@ -21,12 +21,12 @@ namespace Core
 		instruction = instruction << 8;
 
 		instruction += mState.memory[mState.programCounter + 1];
-
+		
 		//
 		//Decode - Execute
 		// 
 
-		int instructionCode = instruction >> 12;
+		char instructionCode = instruction >> 12;
 
 		this->instructionsFunctions[instructionCode](instruction);
 
