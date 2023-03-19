@@ -8,9 +8,10 @@ TBD
 
 # Building
 
-Generate the Visual Studio Solution.
+Generate the Visual Studio Solution to build the project.
 
 # Future features
 
-Cmake support
-Linux support
+- Cmake support
+- Linux support
+- Resolution scaling (x2, x4, ...)
