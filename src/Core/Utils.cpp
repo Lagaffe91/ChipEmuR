@@ -20,7 +20,7 @@ namespace Utils
 
 		programFile.seekg(std::ifstream::beg);
 
-		std::vector<char> buffer;
+		std::vector<char> buffer(fileSize);
 
 		programFile.read(buffer.data(), fileSize);
 		
