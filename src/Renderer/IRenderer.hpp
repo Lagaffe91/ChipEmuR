@@ -13,7 +13,7 @@ namespace Renderer
 		virtual void Init()		= 0;
 		virtual void Release()	= 0;
 
-		virtual void RenderInterpreterState(const InterpreterState& pInterpreterState) = 0;
+		virtual void RenderInterpreterState(const Utils::InterpreterState& pInterpreterState) = 0;
 
 		virtual bool RenderShouldStop() = 0;
 	};

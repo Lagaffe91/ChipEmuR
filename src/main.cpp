@@ -1,26 +1,16 @@
 #include <iostream>
 
-#include "Core/Interpreter.hpp"
-
-#include "Renderer/RaylibRenderer.hpp"
+#include "Core/App.hpp"
 
 int main(const int argc, const char* argv[])
 {
-	Renderer::IRenderer* renderer = new Renderer::RaylibRenderer();
+	Core::App app;
 
-	Core::Interpreter interpreter;
+	app.Init();
 
-	renderer->Init(); 
+	app.Run();
 
-	while (!renderer->RenderShouldStop() || interpreter.ShouldStop())
-	{
-		interpreter.SimulateCycle();
-		renderer->RenderInterpreterState(interpreter.GetCurrentState());
-	}
-
-	renderer->Release();
-
-	delete renderer;
-
+	app.Release();
+	
 	return 0;
 }

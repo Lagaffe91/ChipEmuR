@@ -35,7 +35,7 @@ namespace Renderer
 		CloseWindow();
 	}
 
-	void RaylibRenderer::RenderInterpreterState(const InterpreterState& pInterpreterState)
+	void RaylibRenderer::RenderInterpreterState(const Utils::InterpreterState & pInterpreterState)
 	{
 		BeginDrawing();
 

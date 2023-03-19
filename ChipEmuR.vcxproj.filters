@@ -33,6 +33,12 @@
     <ClCompile Include="src\Core\Interpreter.cpp">
       <Filter>Fichiers sources\core</Filter>
     </ClCompile>
+    <ClCompile Include="src\Core\App.cpp">
+      <Filter>Fichiers sources\core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Utils.cpp">
+      <Filter>Fichiers sources\core</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\raylib\raylib.h">
@@ -54,6 +60,9 @@
       <Filter>Fichiers sources\core</Filter>
     </ClInclude>
     <ClInclude Include="src\Core\Utils.hpp">
+      <Filter>Fichiers sources\core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\App.hpp">
       <Filter>Fichiers sources\core</Filter>
     </ClInclude>
   </ItemGroup>

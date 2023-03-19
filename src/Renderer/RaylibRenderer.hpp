@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../Core/Utils.hpp"
+
 #include "IRenderer.hpp"
 
 namespace Renderer
@@ -20,7 +22,7 @@ namespace Renderer
 		void Init() override;
 		void Release() override;
 
-		void RenderInterpreterState(const InterpreterState& pInterpreterState) override;
+		void RenderInterpreterState(const Utils::InterpreterState& pInterpreterState) override;
 
 		bool RenderShouldStop() override;
 	};
