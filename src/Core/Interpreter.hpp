@@ -44,9 +44,10 @@ namespace Core
 			{0xF, &Interpreter::Instructions0xFxxx}
 		};
 
+		//TODO : !!! Find a better solution than static member functions !!!
 #pragma region
 	private :
-		static void Instructions0x0xxx(const int &pInstruction, Utils::InterpreterState& pState); //Will Need more branching
+		static void Instructions0x0xxx(const int &pInstruction, Utils::InterpreterState& pState);
 		static void Instruction0x1nnn(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0x2nnn(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0x3xkk(const int& pInstruction,	Utils::InterpreterState& pState);
@@ -54,14 +55,14 @@ namespace Core
 		static void Instruction0x5xy0(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instructions0x6xkk(const int& pInstruction, Utils::InterpreterState& pState);
 		static void Instructions0x7xkk(const int& pInstruction, Utils::InterpreterState& pState);
-		static void Instructions0x8xxx(const int& pInstruction, Utils::InterpreterState& pState); //Will Need more branching
+		static void Instructions0x8xxx(const int& pInstruction, Utils::InterpreterState& pState);
 		static void Instruction0x9xy0(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0xAnnn(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0xBnnn(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0xCxkk(const int& pInstruction,	Utils::InterpreterState& pState);
 		static void Instruction0xDxyn(const int& pInstruction,	Utils::InterpreterState& pState);
-		static void Instructions0xExxx(const int& pInstruction, Utils::InterpreterState& pState); //Will Need more branching
-		static void Instructions0xFxxx(const int& pInstruction, Utils::InterpreterState& pState); //Will Need more branching
+		static void Instructions0xExxx(const int& pInstruction, Utils::InterpreterState& pState);
+		static void Instructions0xFxxx(const int& pInstruction, Utils::InterpreterState& pState);
 #pragma endregion Instructions Functions
 	};
 }
